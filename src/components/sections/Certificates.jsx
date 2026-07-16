@@ -47,7 +47,7 @@ export const Certificates = () => {
                         </h3>
 
                         <p className="text-gray-400 mt-2 text-sm text-center">
-                        December 14,2025
+                        November 14,2025
                         </p>
 
                         <button className="mt-5 w-full rounded-lg bg-blue-600 py-2 font-medium hover:bg-blue-700 transition"
