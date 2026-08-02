@@ -2,15 +2,44 @@ import { useState } from "react";
 import { RevealOnScroll } from "../RevealOnScroll"
 import emailjs from 'emailjs-com';
 export const Contact = () =>{
+
+    
+    const validationEmail = (email) => {
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    };
+        
     const [formData,setFormData] = useState({
         name: "",
         email:"",
         message:"",
     });
+
     const handlesubmit = (e) =>{
         // Does not reset the website when submitting the email
         e.preventDefault();
-        emailjs.sendForm(import.meta.env.VITE_SERVICE_ID,import.meta.env.VITE_TEMPLATE_ID,e.target,import.meta.env.VITE_PUBLIC_KEY).then((result)=>{
+
+        if(!formData.name||!formData.email||!formData.message){
+            alert("Please fill out this fields.")
+            return;
+        }
+
+        if(!validationEmail(formData.email)){
+            alert("Please enter a valid email address.")
+            return;
+        }
+
+        if(!formData.message.trim()){
+            alert("Please fill the message here.")
+            return;
+        }
+
+        emailjs.sendForm(
+            import.meta.env.VITE_SERVICE_ID,
+            import.meta.env.VITE_TEMPLATE_ID,
+            e.target,
+            import.meta.env.VITE_PUBLIC_KEY
+        )
+        .then((result)=>{
             alert("Message Sent!")
             setFormData({name:"",email:"",message:"s"});
         }).catch(() => alert("Oops! Something went wrong. PLease try again."));
@@ -18,7 +47,7 @@ export const Contact = () =>{
 
     return <section id = "contact" className = "min-h-screen flex items-center justify-center py-20">
         <RevealOnScroll>
-            <div className = "px-4 w-150">
+            <div className = "px-4 w-full md:w-[600px]">
                 <h2 className = "text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center"> Get In Touch</h2>
                 <form className = "space-y-6" onSubmit={handlesubmit}>
                     <div className = "relative">
