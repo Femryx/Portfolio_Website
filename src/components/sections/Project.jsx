@@ -1,4 +1,7 @@
 import { RevealOnScroll } from "../RevealOnScroll"
+import animo from '../images/animo_reporting.jpg'
+import shopping from '../images/reviews.png'
+import url from '../images/url.png'
 export const Projects = () =>{
     return <section id="project" className = "min-h-screen flex items-center justify-center py-20">
         <RevealOnScroll>
@@ -6,6 +9,13 @@ export const Projects = () =>{
             <h2 className = "text-3xl font-bold mb-8 bg-linear-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">Featured Project</h2>
             <div className = "grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className = "p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,2246,0.2)] transition">
+
+                    <img
+                        src = {animo}
+                        alt = "Animo_Reporting"
+                        className = "w-full h-56 object-cover"
+                    />
+
                     <h3 className = "text-xl font-bold mb-2">Animo Reporting System</h3>
                     <p className = "text-gray-400 mb-4">
                         Animo Reporting System is a reporting system that was integrated by Image Classification that identifies damages in the Image while having a features of Recommendation System, and Geotagging.
@@ -22,6 +32,13 @@ export const Projects = () =>{
                     </div>
                 </div>
                 <div className = "p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,2246,0.2)] transition">
+
+                    <img
+                        src = {shopping}
+                        alt = "shopping_review"
+                        className = "w-full h-56 object-cover"
+                    />
+
                     <h3 className = "text-xl font-bold mb-2">Empathic E-commerce Emotion Detection</h3>
                     <p className = "text-gray-400 mb-4">
                         E-commerce Emotion Detection is a Articial Intelligence that analyze the emotion based on the comment of the customer in E-commerce Websites, just put the comment of the customer then let the Articial Intelligence Analyze the Emotion.
@@ -38,6 +55,12 @@ export const Projects = () =>{
                     </div>
                 </div>
                 <div className = "p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,2246,0.2)] transition">
+
+                    <img
+                        src = {url}
+                        alt = "url_shorten"
+                        className = "w-full h-56 object-cover"
+                    />
                     <h3 className = "text-xl font-bold mb-2">Url Shorten Website </h3>
                     <p className = "text-gray-400 mb-4">
                         It's a website server that shortens the Long URL to Short URL.
