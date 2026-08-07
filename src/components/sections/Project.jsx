@@ -28,7 +28,7 @@ export const Projects = () =>{
                         ))}
                     </div>
                     <div className = "flex justify-between items-center">
-                        <a href="https://github.com/Femryx/Animo-Reporting-System-Front-End" className = "text-blue-400 hover:text-blue-300 transition-colors my-4"> View Project → </a>
+                        <a onClick = {()=> window.open("https://github.com/Femryx/Animo-Reporting-System-Front-End",'_blank')} className = "text-blue-400 hover:text-blue-300 transition-colors my-4"> View Project → </a>
                     </div>
                 </div>
                 <div className = "p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,2246,0.2)] transition">
@@ -73,7 +73,7 @@ export const Projects = () =>{
                         ))}
                     </div>
                     <div className = "flex justify-between items-center">
-                        <a href="https://github.com/Femryx/Url_Shorten_Website" className = "text-blue-400 hover:text-blue-300 transition-colors my-4"> View Project → </a>
+                        <a onClick = {()=> window.open("https://github.com/Femryx/Url_Shorten_Website",'_blank')} className = "text-blue-400 hover:text-blue-300 transition-colors my-4"> View Project → </a>
                     </div>
                 </div>
             </div>
