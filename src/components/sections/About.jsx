@@ -34,7 +34,7 @@ export const About = () =>{
 
             <div className = "rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all">
                 <p className = "text-gray-300 mb-6">
-                    Motivated and detail-oriented Computer Science graduate seeking an entry-level Software Engineer position where I can apply my skills in Computer Science in Backend Development. Eager to learn, improve my technical abilities, and contribute to the success of the company through continuous growth and problem solving.
+                    Motivated and detail-oriented Computer Science graduate seeking an entry-level Software Engineer position where I can apply my skills in Computer Science in Backend Development and I am knowleagable to AI Engineer. Eager to learn, improve my technical abilities, and contribute to the success of the company through continuous growth and problem solving.
                 </p>
 
                 <div className = "grid grid-cols-1 md:grid-cols-2 gap-6">
