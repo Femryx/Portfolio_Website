@@ -1,9 +1,8 @@
 import { RevealOnScroll } from "../RevealOnScroll"
 export const About = () =>{
     const backendSkills = [
-        "Python",
+        "REST APIs",
         "Flask",
-        "Java",
     ]
     const frontendSkills = [
         "Javascript",
@@ -18,12 +17,17 @@ export const About = () =>{
         "Machine Learning",
         "Image Classification",
         "Natural Language Processing",
+        "Computer Vision",
     ]
 
-    const skills = [
-        "Teamwork",
-        "Communication",
-        "Time Management"
+    const AI_Development = [
+        "Claude",
+        "OpenAI Codex",
+    ]
+
+    const programming = [
+        "Python",
+        "JavaScript"
     ]
     return <section id = "about" className = "min-h-screen flex items-center justify-center py-20">
         <RevealOnScroll>
@@ -68,9 +72,19 @@ export const About = () =>{
                         </div>
                     </div>
                     <div className = "rounded-xl p-6 hover:-translate-y-1 transition-all">
-                        <h3 className = "text-xl font-bold mb-4">Skills</h3>
+                        <h3 className = "text-xl font-bold mb-4">AI Development Skills</h3>
                         <div className = "flex flex-wrap gap-2">
-                            {skills.map((tect)=>(
+                            {AI_Development.map((tect)=>(
+                                <span className = "bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,2246,0.2)] transition">
+                                    {tect}
+                                </span>
+                            ))}
+                        </div>
+                    </div>
+                    <div className = "rounded-xl p-6 hover:-translate-y-1 transition-all">
+                        <h3 className = "text-xl font-bold mb-4">Programming Languages</h3>
+                        <div className = "flex flex-wrap gap-2">
+                            {programming.map((tect)=>(
                                 <span className = "bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,2246,0.2)] transition">
                                     {tect}
                                 </span>
@@ -84,13 +98,7 @@ export const About = () =>{
                     <h3 className = "text-xl font-bold-mb-4">🎓 Education</h3>
                     <ul className = "list-disc list-inside text-gray-300 space-y-2">
                         <li>
-                            <strong>Blessed Mary Academy </strong> - HighSchool and Elementary (2016 - 2022)
-                        </li>
-                        <li>
-                            <strong>STEM (Science, Technology, Engineering, and Mathematics) Senior HighSchool </strong> - De La salle Dasmarinas University (2022 - 2024)
-                        </li>
-                        <li>
-                            <strong>B.S. in Computer Science in Intelligent System </strong> - De La salle Dasmarinas University (2024 - 2026)
+                            <strong>B.S. in Computer Science in Intelligent Systems With Magnda Cum Laude </strong> - De La salle Dasmarinas University (2024 - 2026)
                         </li>
                     </ul>
                 </div>
