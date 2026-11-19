@@ -4,7 +4,6 @@ export const About = () =>{
         "Python",
         "Flask",
         "Java",
-        "SQL"
     ]
     const frontendSkills = [
         "Javascript",
